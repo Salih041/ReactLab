@@ -1,0 +1,69 @@
+.todolistContainer
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 175px;
+    background-color: cyan;
+    align-items: center;
+}
+.createContainer
+{
+    box-sizing: border-box;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.TodoInput
+{
+    width: 90%;
+    height: 30px;
+}
+.CreateButton
+{
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 25px;
+    align-self: flex-end;
+}
+.CreateButton:hover
+{
+    cursor: pointer;
+}
+
+.TodosContainer
+{
+    box-sizing: border-box;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: rgb(93, 134, 171);
+}
+
+.SingleTodo
+{
+    box-sizing: border-box;
+    padding: 2px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+.completed
+{
+    background-color: green;
+}
+.notCompleted
+{
+    background-color: gray;
+}

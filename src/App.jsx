@@ -7,7 +7,9 @@ function App() {
   return (
     <div>
       <Navbar></Navbar>
-      <RouterConfig></RouterConfig>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <RouterConfig></RouterConfig>
+      </div>
     </div>
   )
 }
