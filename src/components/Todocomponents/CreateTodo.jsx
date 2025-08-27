@@ -13,7 +13,7 @@ function CreateTodo() {
         const request = {
             id : Math.floor(Math.random()*9999),
             content : newtodo.trim(),
-            isCompleted : true
+            isCompleted : false
         }
         dispatch(addTodo(request))
         setNewtodo("");
@@ -22,7 +22,7 @@ function CreateTodo() {
     return (
         <div className='createContainer'>
             <h2 style={{textAlign:'center'}}>ToDo List</h2>
-            <input value={newtodo} onChange={(e)=>{setNewtodo(e.target.value)}} className='TodoInput' type="text" placeholder='Enter a ToDo' />
+            <input onKeyDown={(e)=>{if(e.key == "Enter") TodoCreate()}} value={newtodo} onChange={(e)=>{setNewtodo(e.target.value)}} className='TodoInput' type="text" placeholder='Enter a ToDo' />
             <button onClick={TodoCreate} className='CreateButton'>ADD</button>
         </div>
     )
