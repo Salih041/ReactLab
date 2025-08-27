@@ -43,10 +43,15 @@ export const todoSlice = createSlice({
                 return todo.id == action.payload ? {...todo, isCompleted:!todo.isCompleted}:todo
             })
             WriteTodosToLocal(state)
+        },
+        cleanTodos : (state,action) =>
+        {
+            state.todos = [];
+            WriteTodosToLocal(state);
         }
     }
 })
 
-export const {addTodo,removeTodo,updateTodo,toggleTodo} = todoSlice.actions
+export const {addTodo,removeTodo,updateTodo,toggleTodo ,cleanTodos} = todoSlice.actions
 
 export default todoSlice.reducer

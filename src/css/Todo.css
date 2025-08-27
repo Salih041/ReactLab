@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 175px;
     background-color: cyan;
     align-items: center;
 }
@@ -15,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 .TodoInput
 {
@@ -38,7 +37,7 @@
 .TodosContainer
 {
     box-sizing: border-box;
-    padding-top: 20px;
+   
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -66,4 +65,55 @@
 .notCompleted
 {
     background-color: gray;
+}
+
+.FilterButtonsContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.Button
+{
+    width: 20%;
+    height: 20px;
+}
+
+.Clear
+{
+    height: 20px;
+    width: 20%;
+    margin-left: auto;
+}
+
+.Button:hover
+{
+    cursor: pointer;
+}
+
+Button.active
+{
+    background-color: pink;
+}
+
+.searchDiv
+{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+.searchTodoInput
+{
+    width: 40%;
+    height: 20px;
+    font-size: 0.7rem;
+}
+.cleanSearch
+{
+    width: 5%;
+    height: 25px;
+    border: 1px solid gray;
 }
