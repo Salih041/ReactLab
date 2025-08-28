@@ -1,0 +1,177 @@
+.NoteListContainer
+{
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+}
+
+.NoteCard
+{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 240px;
+    height: 240px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    box-shadow: 5px 5px 10px;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.NoteCard p {
+    overflow: hidden;
+    position: relative;
+    max-height: 150px; /* satır sayısı x satır yüksekliği */
+    word-wrap: break-word;
+}
+
+
+
+.NoteCard:hover
+{
+    cursor: pointer;
+    background-color: rgb(231, 217, 198);
+    box-shadow: 5px -1px 10px;
+}
+.NoteHeader
+{
+    align-self: center;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.NoteContent
+{
+    margin: 0;
+    padding: 0;
+}
+.NoteDate
+{
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.CreateNoteDiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 250, 215);
+    width: 240px;
+    height: 240px;
+    transition: 0.4s;
+    border-bottom: 7px double black;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px ;
+    border-top: 10px dotted black;
+}
+.CreateNoteDiv:hover
+{
+    cursor: pointer;
+    background-color: rgb(185, 245, 201);
+    box-shadow: 10px 5px 10px;
+}
+
+.CreateNotePlusIcon
+{
+    color:green;
+}
+
+.modalBack
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 40vw;
+    aspect-ratio: 1;
+    z-index: 1001;
+    background-color:antiquewhite;
+}
+.CloseButton
+{
+    align-self: flex-end;
+    font-size: 40px;
+    transition: 0.4s;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.CloseButton:hover
+{
+    cursor: pointer;
+    color: rgb(150, 0, 0);
+}
+.HeaderInput
+{
+    width: 50%;
+    height: 30px;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-color: antiquewhite;
+}
+#ContentArea
+{
+    margin-top: 20px;
+    width: 90%;
+    aspect-ratio: 1.3;
+    font-size: 20px;
+    border: none;
+    resize: none;
+    background-color: antiquewhite;
+}
+.UpdateButton
+{
+    font-size: 35px;
+    transition: 0.4s;
+    margin-left: auto;
+}
+.UpdateButton:hover
+{
+    color: rgb(0, 150, 0);
+    cursor: pointer;
+}
+.BottomButtons
+{
+    margin-top: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.DeleteNoteButton
+{
+    font-size: 30px;
+    transition: 0.4s;
+}
+.DeleteNoteButton:hover
+{
+    color: red;
+    cursor: pointer;
+}
