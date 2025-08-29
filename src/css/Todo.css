@@ -1,50 +1,67 @@
 .todolistContainer
 {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     width: 50%;
-    background-color: cyan;
+    background-color: rgb(201, 255, 255);
     align-items: center;
 }
 .createContainer
 {
     box-sizing: border-box;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 .TodoInput
 {
-    width: 90%;
+    width: 70%;
     height: 30px;
+    background-color: rgb(233, 255, 233);
+    border: 1px solid green;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
 }
 .CreateButton
 {
-    width: 50%;
+    width: 30%;
     height: 30px;
     margin-top: 10px;
-    margin-right: 25px;
+    margin-right: 100px;
     align-self: flex-end;
+    background-color: rgb(192, 255, 192);
+    border: 1px solid green;
+    border-radius: 20px;
+    transition: 0.4s;
 }
 .CreateButton:hover
 {
     cursor: pointer;
+    background-color: rgb(102, 255, 102);
 }
 
 .TodosContainer
 {
     box-sizing: border-box;
-   
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     gap: 10px;
     width: 100%;
-    background-color: rgb(93, 134, 171);
+    background-color: rgb(155, 208, 255);
+    box-sizing: border-box;
+    padding: 1px;
+    padding-bottom: 10px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .SingleTodo
@@ -57,14 +74,21 @@
     align-items: center;
     width: 100%;
     height: 35px;
+    box-shadow: 1px 1px 2px gray;
+}
+.SingleTodo:hover
+{
+    border: 2px solid blue;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgb(0, 150, 255);
 }
 .completed
 {
-    background-color: green;
+    background-color: rgb(140, 255, 140);
 }
 .notCompleted
 {
-    background-color: gray;
+    background-color: rgb(255, 245, 140);
 }
 
 .FilterButtonsContainer
@@ -80,6 +104,11 @@
 {
     width: 20%;
     height: 20px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(216, 186, 255);
+    transition: 0.4s;
+    border-radius: 10px;
 }
 
 .Clear
@@ -87,11 +116,13 @@
     height: 20px;
     width: 20%;
     margin-left: auto;
+    background-color: rgb(255, 103, 103);
 }
 
 .Button:hover
 {
     cursor: pointer;
+    background-color: rgb(172, 109, 255);
 }
 
 Button.active
@@ -107,13 +138,26 @@ Button.active
 }
 .searchTodoInput
 {
+    border: 1px solid black;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 10px;
     width: 40%;
     height: 20px;
     font-size: 0.7rem;
 }
 .cleanSearch
 {
-    width: 5%;
-    height: 25px;
+    width: 4%;
+    height: 20px;
     border: 1px solid gray;
+    background-color: rgb(141, 70, 70);
+    color: white;
+}
+
+.todoButtons:hover
+{
+    transition: 0.2s;
+    cursor: pointer;
+    color: rgb(157, 253, 253);
 }
