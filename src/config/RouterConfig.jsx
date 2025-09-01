@@ -13,7 +13,6 @@ function RouterConfig() {
         <Route exact path='/' element={<Home/>}></Route>
         <Route exact path='/todolist' element={<ToDoList/>}></Route>
         <Route exact path='/notes' element={<Notes/>}></Route>
-        <Route exact path='/calculator' element={<Calculator/>}></Route>
         <Route exact path='/currency' element={<CurrencyConverter/>}></Route>
         <Route exact path='/weather' element={<Weather/>}></Route>
     </Routes>

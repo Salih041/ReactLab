@@ -11,8 +11,7 @@ function Navbar() {
             <div className='NavbarRight'>
                 <NavLink className='NavLink' to="/todolist">ToDo</NavLink>
                 <NavLink className='NavLink' to="/notes">Notes</NavLink>
-                <NavLink className='NavLink' to='/calculator'>Calculator</NavLink>
-                <NavLink className='NavLink' to='/currency'>Currency</NavLink>
+                <NavLink className='NavLink' to='/currency'>--Currency--</NavLink>
                 <NavLink className='NavLink' to='/weather'>Weather</NavLink>
             </div>
 
