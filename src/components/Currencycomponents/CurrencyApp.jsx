@@ -19,8 +19,8 @@ function CurrencyApp() {
 
     return (
             <div className='CurrencyConverterApp'>
-                <input type="number" className='firstAmount' value={amount} onKeyDown={(e)=>{if(e.key==="Enter"){exchange(fromValue,toValue)}}} onChange={(e)=>{setAmount(e.target.value)}}/>
-                <select onChange={(e)=>{setFromValue(e.target.value)}} name="first" id="firstSelect">
+                <input type="number" className='firstAmount currencyInput' value={amount} onKeyDown={(e)=>{if(e.key==="Enter"){exchange(fromValue,toValue)}}} onChange={(e)=>{setAmount(e.target.value)}}/>
+                <select className='currencySelect' onChange={(e)=>{setFromValue(e.target.value)}} name="first" id="firstSelect">
                     <option>USD</option>
                             <option>EUR</option>
                             <option>TRY</option>
@@ -55,8 +55,8 @@ function CurrencyApp() {
                             <option>THB</option>
                             <option>ZAR</option>
                 </select>
-                <button onClick={()=>{exchange(fromValue,toValue)}}><FaLongArrowAltRight className='arrow'/></button>
-                <select onChange={(e)=>{setToValue(e.target.value)}} name="second" id="secondSelect">
+                <button className='currencyButton' onClick={()=>{exchange(fromValue,toValue)}}><FaLongArrowAltRight className='arrow'/></button>
+                <select className='currencySelect' onChange={(e)=>{setToValue(e.target.value)}} name="second" id="secondSelect">
                     <option>TRY</option>
                             <option>USD</option>
                             <option>EUR</option>
@@ -91,7 +91,7 @@ function CurrencyApp() {
                             <option>THB</option>
                             <option>ZAR</option>
                 </select>
-                <input type="number" value={result} readOnly className='secondAmount'/>
+                <input type="number" value={result} readOnly className='secondAmount currencyInput'/>
             </div>
     )
 }

@@ -28,7 +28,7 @@
     box-shadow: 0px 20px 20px gray;
 }
 
-input {
+.currencyInput {
     width: 20%;
     height: 30px;
     border: 2px solid black;
@@ -37,7 +37,7 @@ input {
     padding: 10px;
 }
 
-select {
+.currencySelect {
     width: 10%;
     min-width: 60px;
     height: 35px;
@@ -47,12 +47,12 @@ select {
     padding: 5px;
     transition: 0.4s;
 }
-select:hover{
+.currencySelect:hover{
     background-color: rgb(220, 220, 220);
     cursor: pointer;
 }
 
-button {
+.currencyButton {
     min-width: 60px;
     width: 10%;
     height: 35px;
@@ -61,7 +61,7 @@ button {
     border-radius: 20px;
     transition: 0.4s;
 }
-button:hover
+.currencyButton:hover
 {
     background-color: rgb(27, 255, 255);
     cursor: pointer;
